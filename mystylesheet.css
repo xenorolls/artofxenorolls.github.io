@@ -145,6 +145,11 @@
     margin-bottom: none;
     font-size: 25px;
 }
+
+.content-contact img{
+    float: right;
+}
+
 .container-project{
     display: grid;
     grid-gap: 30px;
@@ -170,4 +175,10 @@
     width: 230px;
     transition: 0.5s;
     align-items: left;
+}
+
+.portrait img{
+    float: right;
+    margin-left: 25px;
+    margin-right: 25px;
 }
