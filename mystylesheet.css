@@ -14,7 +14,7 @@
 
 .logo_text{
     text-align: center;
-	color: darkgray;
+	color: white;
    
 }
 
@@ -24,7 +24,7 @@
     cursor: pointer;
 	background: none;
 	transition: 1s;
-	color: darkgray;
+	color: white;
 	font-size: 55px;
 	font-family: "Montserrat";
     position: center;
@@ -40,7 +40,9 @@
     position: center;
     background-color: inherit;
     float: center;
-    border-bottom: 0.5px solid gray;
+    border-bottom: 0.5px solid white;
+    margin-left: 100px;
+    margin-right: 100px;
     outline: none;
     cursor: pointer;
     font-size: 35px;
@@ -53,7 +55,7 @@
     outline: none;
     cursor: pointer;
 	background: none;
-	color: darkgray;
+	color: white;
 	font-size: 25px;
     font-family: "Montserrat";
 }
@@ -83,6 +85,11 @@
     text-align: center;
 }
 
+.content p{
+    margin: 100px;
+    color: white;
+}
+
 .container-about{
 	display: grid;
     grid-gap: 30px;
@@ -92,13 +99,14 @@
     color: darkgray;
     font-size: 33px;
     text-align: left;
-    margin-left: 55px;
+    margin-left: 100px;
 }
 
 .content-about{
     font-family: "Montserrat";
     font-size: 20px;
     float: left;
+    color: white;
 }
 
 .container-gallery{
@@ -107,47 +115,50 @@
     grid-template-areas:
     'gallery gallery gallery'
     'gallery gallery gallery';
-    color: darkgray;
+    color: white;
     font-size: 33px;
     text-align: center;
+    font-family: "Montserrat";
 }
 
 .title{
 	text-align: left;
 	font-size: 35px;
 	font-family: "Montserrat";
-	color: darkgray;
+	color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-
-.gallery img{
-    max-inline-size: 55%;
-    block-size: auto;
-    padding: 36px;
-    width: 230px;
-    filter: grayscale(100%);
-    transition: 0.5s;
+.gallery{
+    margin-left: 100px;
+    margin-right: 100px;
     align-items: left;
 }
 
-.gallery img:hover{
-    filter: none;
+.gallery img{
+    float: left;
+    max-block-size: 300px;
+    object-fit: cover;
 }
 
-.content-contact{
+.content-statement{
     font-family: "Montserrat";
     text-align: left;
-    margin-left: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.content-contact a{
-    color: white;
-    margin-bottom: none;
+.content-statement img{
+    align-items: center;
+}
+
+.content-statement p{
     font-size: 25px;
-}
-
-.content-contact img{
-    float: right;
+    font-family: "Montserrat";
+    color: white;
 }
 
 .container-project{
@@ -155,7 +166,7 @@
     grid-gap: 30px;
     grid-template-areas:
     'project-page project-page project-page';
-    color: darkgray;
+    color: white;
     font-size: 33px;
     text-align: center;
 }
@@ -168,17 +179,31 @@
     font-family: 'Montserrat';
 }
 
+.project-gallery{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .project-gallery img{
-    max-inline-size: 55%;
-    block-size: auto;
-    padding: 36px;
-    width: 230px;
-    transition: 0.5s;
-    align-items: left;
+    float: left;
+    max-block-size: 200px;
+    object-fit: contain;
+}
+
+.project-page p{
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .portrait img{
     float: right;
-    margin-left: 25px;
-    margin-right: 25px;
+    max-inline-size: 50%;
+    margin: 25px;
+}
+
+.hi img{
+    float: right;
+    max-inline-size: 50%;
+    margin: 25px;
 }
